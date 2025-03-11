@@ -15,8 +15,9 @@
 ![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/test.jpg)
 
 <audio controls>
-  <source src="https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/output.mp3" type="audio/mpeg">
+  <source src="https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3" type="audio/mpeg">
 </audio>
+
 
 
 ![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/image1.jpeg)
