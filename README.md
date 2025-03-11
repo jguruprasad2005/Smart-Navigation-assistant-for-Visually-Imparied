@@ -14,9 +14,7 @@
 # Sample image and audio output
 ![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/test.jpg)
 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3" type="audio/mpeg">
-</audio>
+[Download and listen to the audio](https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3)
 
 
 
