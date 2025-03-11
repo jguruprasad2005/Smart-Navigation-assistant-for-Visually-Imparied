@@ -10,10 +10,10 @@
 - Converts navigation instructions to speech using Google Text-to-Speech (gTTS).
 - Plays audio output to guide the user.
 
+<br/>
 
+[Listen to sample audio output](https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3)
 
-\n[Listen to sample audio output](https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3)\n
-
-
+<br/>
 
 ![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/image1.jpeg)
