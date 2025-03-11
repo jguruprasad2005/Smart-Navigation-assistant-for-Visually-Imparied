@@ -2,32 +2,18 @@ import time
 from picamera2 import Picamera2
 import requests
 import json
+import subprocess
 import pyttsx3
 import base64
 import os
+from gtts import gTTS
+from playsound import playsound
 
 # Initialize camera
 camera = Picamera2()
 camera_config = camera.create_still_configuration(main={"size": (640, 480)})
 camera.configure(camera_config)
 camera.start()
-
-# Initialize text-to-speech engine
-# Initialize text-to-speech engine with better settings
-engine = pyttsx3.init()
-engine.setProperty('rate', 130)     # Even slower for better clarity
-engine.setProperty('volume', 1.0)   # Maximum volume
-engine.setProperty('voice', 'english')  # Ensure English voice
-
-
-
-# Set a higher quality voice if available
-voices = engine.getProperty('voices')
-for voice in voices:
-    if "english" in voice.name.lower():
-        engine.setProperty('voice', voice.id)
-        break
-
 
 
 def capture_image():
@@ -55,13 +41,12 @@ def get_navigation_instructions(image_path):
     # Create a clearer prompt that won't be repeated in the response
     prompt = """
     RESPOND ONLY WITH NAVIGATION DIRECTIONS. NO PREAMBLE.
+    You are a navigation assistant for a blind person. Your goal is to provide *detailed* and *clear* descriptions
     
-    Analyze this image for a blind person navigation system. 
-    Provide ONLY 2-3 very short sentences with:
-    - Clear path direction
-    - Immediate obstacles
-    - Simple directional terms
-    - Distances in steps
+    Describe the overall scene: Mention what objects, people, or obstacles are present in the image.
+    Give clear navigation guidance:Specify directions (left, right, straight, stop), approximate distances, and any potential risks.
+    Include safety precautions: Mention any moving objects, steps, slopes, or uneven surfaces.  
+    Ensure clarity: Use natural, conversational language that is easy to understand.
     
     DO NOT start with "I see" or repeat these instructions.
     """
@@ -70,7 +55,7 @@ def get_navigation_instructions(image_path):
     response = model.generate_content([prompt, image])
     
     # Extract just the response text
-    navigation_text = response.text()
+    navigation_text = response.text
     
     # Clean up the response
     #navigation_text = clean_response(navigation_text)
@@ -79,11 +64,17 @@ def get_navigation_instructions(image_path):
     return navigation_text
 
 def speak_text(text):
-    """Convert text to speech and play it"""
-    print(f"Speaking: {text}")
-    engine.say(text)
-    engine.runAndWait()
-    print("Speech completed")
+    try:
+        tts = gTTS(text=text, lang='en', slow=False)
+        tts.save("output.mp3")
+        #os.system(" mpg321 output.mp3 ")
+        subprocess.run(["ffplay", "-nodisp", "-autoexit", "-af", "atempo=1.5", "output.mp3"], 
+                      stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+        #os.remove("output.mp3")
+    except Exception as e:
+        print(f"TTS error: {e}")
+        # Fallback to simpler method if TTS fails
+        os.system(f'echo "{text}" | festival --tts')
 
 # Main loop
 try:
