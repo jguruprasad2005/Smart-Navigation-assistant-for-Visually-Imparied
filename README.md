@@ -13,7 +13,10 @@
 
 # Sample image and audio output
 ![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/test.jpg)
-[Listen to the audio](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/output.mp3)
+
+<audio controls>
+  <source src="https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/output.mp3" type="audio/mpeg">
+</audio>
 
 
 ![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/image1.jpeg)
