@@ -10,3 +10,5 @@
 - Converts navigation instructions to speech using Google Text-to-Speech (gTTS).
 - Plays audio output to guide the user.
 
+
+![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/image1.jpeg)
