@@ -11,10 +11,8 @@
 - Plays audio output to guide the user.
 
 
-# Sample image and audio output
-![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/test.jpg)
 
-[Download and listen to the audio](https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3)
+[Listen to sample audio output](https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3)
 
 
 
