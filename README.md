@@ -4,11 +4,26 @@
 - The system captures an image, sends it to an LLM like Gemini for processing, receives navigation instructions, and provides them as audio output.
 
 
-### Features
-- Captures image using Raspberry Pi camera.
-- Processes the image with a vision model API.
-- Converts navigation instructions to speech using Google Text-to-Speech (gTTS).
-- Plays audio output to guide the user.
+### Key Features
+
+- **Image Capture**  
+  Utilizes the Raspberry Pi camera to capture real-time images.
+
+- **Vision Processing**  
+  Integrates with a vision model API to analyze captured images and extract useful navigation information.
+
+- **Voice Navigation**  
+  Converts navigation instructions into speech using Google Text-to-Speech (gTTS) for audible guidance.
+
+- **Audio Output**  
+  Plays voice instructions to assist the user in real-time.
+
+- **GPS Tracking**  
+  Continuously tracks the user's location using GPS.
+
+- **Emergency Alert**  
+  Includes an emergency button that, when pressed, sends the user's live location to their guardian via email.
+
 
 <br/>
 
