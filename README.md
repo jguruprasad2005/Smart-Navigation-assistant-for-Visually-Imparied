@@ -27,6 +27,11 @@
 
 <br/>
 
+
+
+![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/sample_image.jpg)
+<br/>
+
 [Listen to sample audio output](https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3)
 
 <br/>
