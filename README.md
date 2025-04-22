@@ -32,7 +32,7 @@
 ![Alt Text](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/sample_image.jpg)
 <br/>
 
-[Listen to sample audio output](https://raw.githubusercontent.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/main/output.mp3)
+[Listen to the Navigation instruction for the above image as audio output](https://github.com/jguruprasad2005/Smart-Navigation-assistant-for-Visually-Imparied/blob/main/audio_output.mp3)
 
 <br/>
 
