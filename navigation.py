@@ -20,11 +20,17 @@ def initialize_camera():
     return camera
 
 # Configure Gemini API
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="YOUR_API_KEY") #Enter your own Gemini API key here
 
 # Email Configuration
-EMAIL_SENDER = "BLIND_PERSON_EMAIL_ID"
-EMAIL_PASSWORD = "PASSWORD"
+
+"""
+Google requires you to use an App Password, which is a 16-character unique password generated.
+Look online on how to generate this password.
+This is the password which are supposed which you have to assign to EMAIL_PASSWORD below.
+"""
+EMAIL_SENDER = "BLIND_PERSON_EMAIL_ID" # blind person email id
+EMAIL_PASSWORD = "PASSWORD"  
 EMAIL_RECEIVER = "GUARDIAN_EMAIL_ID"
 
 # Button Configuration
