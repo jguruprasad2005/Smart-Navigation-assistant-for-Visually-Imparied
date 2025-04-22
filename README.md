@@ -1,7 +1,7 @@
 # Smart Navigation Assistant (still working on this project)
 
-- This project is a Navigation Assistant that helps users navigate their surroundings using computer vision and text-to-speech (TTS).
-- The system captures an image, sends it to an LLM like Gemini for processing, receives navigation instructions, and provides them as audio output.
+- This project is a Navigation Assistant that helps users navigate their surroundings.
+- The system captures an image, sends it to an LLM like Gemini for processing, receives navigation instructions, and provides them as audio output using text-to-speech (TTS).
 
 
 ### Key Features
